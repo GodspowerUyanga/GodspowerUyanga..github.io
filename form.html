@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy of Excellence</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="academy-name">Academy of Excellence</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h2>Welcome to the Academy of Excellence</h2>
+            <p>Empowering minds, transforming lives.</p>
+            <div class="home-image"><img src="homepage.jpeg" alt="Example Image"></div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <p>Explore our diverse range of courses designed to meet your educational goals.</p>
+            
+            <div class="course-listing">
+                <h3>Web Development</h3>
+                <p>Master the fundamentals of web development, including HTML, CSS, and JavaScript.</p>
+            </div>
+            
+            <div class="course-listing">
+                <h3>Data Science</h3>
+                <p>Dive into the world of data science with courses covering machine learning, data analysis, and more.</p>
+            </div>
+            
+            <div class="course-listing">
+                <h3>Graphic Design</h3>
+                <p>Unlock your creative potential with courses in graphic design, typography, and visual communication.</p>
+            </div>
+            
+            <div class="course-listing">
+                <h3>Business Administration</h3>
+                <p>Gain essential business skills and knowledge in areas such as finance, marketing, and management.</p>
+            </div>
+            
+            <div class="course-listing">
+                <h3>UI/UX Design</h3>
+                <p>Learn user interface and user experience design principles to create intuitive and engaging digital experiences.</p>
+            </div>
+            
+            <div class="course-listing">
+                <h3>Cybersecurity</h3>
+                <p>Protect digital assets and networks from cyber threats with courses in cybersecurity, ethical hacking, and network security.</p>
+            </div>
+
+            <!-- Course enrollment form -->
+            <form action="#" method="POST" class="form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="" disabled selected>Select a course</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="business">Business Administration</option>
+                        <option value="ui-ux-design">UI/UX Design</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience Level:</label>
+                    <input type="radio" id="beginner" name="experience" value="beginner" required>
+                    <label for="beginner">Beginner</label>
+                    <input type="radio" id="intermediate" name="experience" value="intermediate">
+                    <label for="intermediate">Intermediate</label>
+                    <input type="radio" id="advanced" name="experience" value="advanced">
+                    <label for="advanced">Advanced</label>
+                </div>
+                <div class="form-group">
+                    <label for="topics">Topics of Interest:</label>
+                    <input type="checkbox" id="frontend" name="topics" value="frontend">
+                    <label for="frontend">Frontend Development</label>
+                    <input type="checkbox" id="backend" name="topics" value="backend">
+                    <label for="backend">Backend Development</label>
+                    <input type="checkbox" id="ui-ux" name="topics" value="ui-ux">
+                    <label for="ui-ux">UI/UX Design</label>
+                    <input type="checkbox" id="security" name="topics" value="security">
+                    <label for="security">Security</label>
+                </div>
+                <button type="submit" class="btn">Enroll Now</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p color = "blue">Welcome to the Academy of Excellence, where we are committed to providing top-quality education and empowering individuals to achieve their full potential.</p>
+        
+            <p>At our academy, we believe that education is the key to unlocking opportunities and transforming lives. Our dedicated team of educators and professionals is passionate about helping students succeed in their academic and career pursuits.</p>
+        
+            <p>Founded in 13th February, 2024, the Academy of Excellence has been at the forefront of providing innovative and comprehensive learning experiences. We offer a wide range of courses across various disciplines, including web development, data science, graphic design, business administration, UI/UX design, and cybersecurity.</p>
+        
+            <p>Our mission is to create a supportive and inclusive learning environment where students can thrive and reach their goals. With state-of-the-art facilities, experienced instructors, and hands-on learning opportunities, we ensure that our students are well-equipped to excel in their chosen fields.</p>
+        
+            <p>Whether you are a beginner looking to explore new skills or a seasoned professional seeking to advance your career, the Academy of Excellence has something for everyone. Join us on your journey towards success!</p>
+            <p>Learn more about our mission, values, and commitment to excellence.</p>
+            <div class="about-image"><img src="Aboutus.jpg" alt="Example Image"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for inquiries, admissions, or general information.</p>
+            <!-- Contact form -->
+            <form action="#" method="POST" class="form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Academy of Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
